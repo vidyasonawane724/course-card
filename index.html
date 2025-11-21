@@ -1,84 +1,238 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
     <title>course card</title>
     <style>
-        .main-card{
+        .card-container{
+            display: flex;
+            flex-wrap: wrap;
+            gap:20px;
+            justify-content: center;
+        }
+        .main-card {
             height: 500px;
-            width:400px;
-             border-radius: 10px;
-            
+            width: 400px;
+            border-radius: 10px;
+
             border-style: solid;
             border-color: grey;
             border-width: 2px;
-           align-items: center;
-
-        }
-        .image{
-        height:200px;
-        width:400px;
-
-    }
-    .internship-info{
-        color: #000033;
-        background-color:#9999ff;
-        margin-left: 5px;
-        margin-right: 140px;
+           
+           
         
-    }
-    .buttons{
-        display: flex;
-        align-items:center;
-        margin-left: 10px;
-        border-radius: 20px;
-    }
-    .review{
-    
-        display: flex;
-        flex-direction: row;
-
-    }
-    .comment{
-        display:flex;
-        justify-content:left;
-    }
-    .info{
-        display:flex;
-        justify-content: right;
-        align-items: center;
-    }
+        }
+        .image {
+            height: 200px;
+            width: 400px;
+        }
+        .internship-info {
+            color: #000033;
+            background-color: #9999ff;
+            margin-left: 5px;
+            margin-right: 140px;
+        }
+        .buttons {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+        .review {
+            display: flex;
+            flex-direction: row;
+        }
+        .comment {
+            display: flex;
+            justify-content: left;
+        }
+        .info {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+        }
     </style>
-    
 </head>
 <body>
- <div class="main-card">
-    <img src="./pages/categories.png" class="image"/>
-    <div>
-        <h1>InfotechShop</h1>
-        <label class="internship-info">Internship Cohort Program 6.0</label>
-    </div><br/>
-    This project serves as the foundation for an e-commerce website specializing in the sale of electronic gadgets.<br/><br/>
-    <div class="buttons" >
-        <button class="buttons" style="background-color:rgb(125, 216, 181);"><img src="./pages/react-original.svg" height="20px"/> React</button>&nbsp;
-        <button class="buttons" style="background-color:rgb(95, 212, 95);"><img src="./pages/nodejs-original.svg" height="20px"/> Node.js</button>&nbsp;
-        <button class="buttons" style="background-color:#9999ff;"><img src="./pages/express-original.svg" height="20px"/> Express.js</button>&nbsp;
-        <button class="buttons" style="background-color:#a3a3ca">+2</button>
-    </div><br/>
-    <div class="review">
+    <div class="card-container">
+    <div class="main-card">
+        <img src="./pages/categories.png" class="image" />
+        <div>
+            <h1>InfotechShop</h1>
+            <label class="internship-info">Internship Cohort Program 6.0</label>
+        </div><br />
+        This project serves as the foundation for an e-commerce website specializing in the sale of electronic
+        gadgets.<br /><br />
+        <div class="buttons">
+            <button class="buttons" style="background-color:rgb(125, 216, 181);"><img src="./pages/react-original.svg"
+                    height="20px" /> React</button>&nbsp;
+            <button class="buttons" style="background-color:rgb(95, 212, 95);"><img src="./pages/nodejs-original.svg"
+                    height="20px" /> Node.js</button>&nbsp;
+            <button class="buttons" style="background-color:#9999ff;"><img src="./pages/express-original.svg"
+                    height="20px" /> Express.js</button>&nbsp;
+            <button class="buttons" style="background-color:#a3a3ca">+2</button>
+        </div><br />
+        <div class="review">
 
-        <img src="./pages/calendar-icon.6ca85236.svg"  height="20px"/>Apr 2025 - Apr 2025 &nbsp;&nbsp;&nbsp; 
-        <img src="./pages/my-photo.jpeg" height="20px" /> Vidya Sonawane<br/></div>
-        <hr/>
-        <div class="comment">
-        <img src="./pages/deafult-clap-logo.47354508.svg" height="20px"/>18 &nbsp;
-        <img src="./pages/comment-story.4dd52157.svg" height="20px"/>4 &nbsp;
-        <img src="./pages/share-logo.d24cfab1.svg" height="20px"/> 
-            
+            <img src="./pages/calendar-icon.6ca85236.svg" height="20px" />Apr 2025 - Apr 2025 &nbsp;&nbsp;&nbsp;
+            <img src="./pages/my-photo.jpeg" height="20px" /> Vidya Sonawane<br />
         </div>
-    <div class="info"><a href="https://www.roadtocode.org/project?tab=all">see more <img src="./pages/right-arrow.gif" height="20px"/></a>
-    
+        <hr />
+        <div class="comment">
+            <img src="./pages/deafult-clap-logo.47354508.svg" height="20px" />18 &nbsp;
+            <img src="./pages/comment-story.4dd52157.svg" height="20px" />4 &nbsp;
+            <img src="./pages/share-logo.d24cfab1.svg" height="20px" />
+
+        </div>
+        <div class="info"><a href="https://www.roadtocode.org/project?tab=all">see more <img
+                    src="./pages/right-arrow.gif" height="20px" /></a>
+
+        </div>
     </div>
- </div>   
- <br/>
+    
+
+
+    <div class="main-card">
+        <img src="./pages/space-ship.png" class="image" />
+        <div>
+            <h1>SpaceShip</h1>
+            <label class="internship-info">Internship Cohort Program 3.0</label>
+        </div><br />
+        Spaceship is a mini Wikipedia 📖 for computer science students, created by RoadToCode.<br /><br />
+        <div class="buttons">
+            <button class="buttons" style="background-color:rgb(125, 216, 181);"><img src="./pages/react-original.svg"
+                    height="20px" /> React</button>&nbsp;
+            <button class="buttons" style="background-color:rgb(155, 160, 155);"><img src="./pages/github-original.svg"
+                    height="20px" /> GitHub</button>&nbsp;
+            <button class="buttons" style="background-color:#9999ff;"><img src="./pages/express-original.svg"
+                    height="20px" /> Express.js</button>&nbsp;
+            <button class="buttons" style="background-color:#a3a3ca">+4</button>
+        </div><br />
+        <div class="review">
+
+            <img src="./pages/calendar-icon.6ca85236.svg" height="20px" />Jan 2025 - May 2025 &nbsp;&nbsp;&nbsp;
+            <img src="./pages/my-photo.jpeg" height="20px" /> Vidya Sonawane<br />
+        </div>
+        <hr />
+        <div class="comment">
+            <img src="./pages/deafult-clap-logo.47354508.svg" height="20px" />12 &nbsp;
+            <img src="./pages/comment-story.4dd52157.svg" height="20px" />1 &nbsp;
+            <img src="./pages/share-logo.d24cfab1.svg" height="20px" />
+
+        </div>
+        <div class="info"><a href="https://www.roadtocode.org/project?tab=all">see more <img
+                    src="./pages/right-arrow.gif" height="20px" /></a>
+
+        </div>
+    </div>
+    <br />
+
+
+
+    <div class="main-card">
+        <img src="./pages/calculator.avif" class="image" />
+        <div>
+            <h1>Calculator App</h1>
+            <label class="internship-info">Internship Cohort Program 4.0</label>
+        </div><br />
+        Simple calculator for basic operations.<br /><br />
+        <div class="buttons">
+            <button class="buttons" style="background-color:rgb(125, 216, 181);"><img src="./pages/html.png"
+                    height="20px" /> Html </button>&nbsp;
+            <button class="buttons" style="background-color:rgb(155, 160, 155);"><img src="./pages/css.jfif"
+                    height="20px" /> css</button>&nbsp;
+            <button class="buttons" style="background-color:#9999ff;"><img src="./pages/javascript.jfif"
+                    height="20px" /> JavaScript</button>&nbsp;
+            <button class="buttons" style="background-color:#a3a3ca">+6</button>
+        </div><br />
+        <div class="review">
+
+            <img src="./pages/calendar-icon.6ca85236.svg" height="20px" />June 2025 - Nov 2025 &nbsp;&nbsp;&nbsp;
+            <img src="./pages/my-photo.jpeg" height="20px" /> Vidya Sonawane<br />
+        </div>
+        <hr />
+        <div class="comment">
+            <img src="./pages/deafult-clap-logo.47354508.svg" height="20px" />14 &nbsp;
+            <img src="./pages/comment-story.4dd52157.svg" height="20px" />8 &nbsp;
+            <img src="./pages/share-logo.d24cfab1.svg" height="20px" />
+
+        </div>
+        <div class="info"><a href="https://www.roadtocode.org/project?tab=all">see more <img
+                    src="./pages/right-arrow.gif" height="20px" /></a>
+
+        </div>
+    </div>
+
+
+    <div class="main-card">
+        <img src="./pages/student-management.jpg" class="image" />
+        <div>
+            <h1>Student Management System</h1>
+            <label class="internship-info">Internship Cohort Program 2.0</label>
+        </div><br />
+        CRUD operations with authentication.<br /><br />
+        <div class="buttons">
+            <button class="buttons" style="background-color:rgb(125, 216, 181);"><img src="./pages/nodejs-original.svg"
+                    height="20px" /> Node.js </button>&nbsp;
+            <button class="buttons" style="background-color:rgb(155, 160, 155);"><img src="./pages/express-original.svg"
+                    height="20px" /> Express.js</button>&nbsp;
+            <button class="buttons" style="background-color:#9999ff;"><img src="./pages/mongodb-original.svg"
+                    height="20px" /> MongoDB</button>&nbsp;
+            <button class="buttons" style="background-color:#a3a3ca">+2</button>
+        </div><br />
+        <div class="review">
+
+            <img src="./pages/calendar-icon.6ca85236.svg" height="20px" />sep 2025 - dec 2025 &nbsp;&nbsp;&nbsp;
+            <img src="./pages/my-photo.jpeg" height="20px" /> Vidya Sonawane<br />
+        </div>
+        <hr />
+        <div class="comment">
+            <img src="./pages/deafult-clap-logo.47354508.svg" height="20px" />10 &nbsp;
+            <img src="./pages/comment-story.4dd52157.svg" height="20px" />2 &nbsp;
+            <img src="./pages/share-logo.d24cfab1.svg" height="20px" />
+
+        </div>
+        <div class="info"><a href="https://www.roadtocode.org/project?tab=all">see more <img
+                    src="./pages/right-arrow.gif" height="20px" /></a>
+
+        </div>
+    </div>
+
+
+    <div class="main-card">
+        <img src="./pages/to-do-list.jpg" class="image" />
+        <div>
+            <h1>To-Do List App</h1>
+            <label class="internship-info">Internship Cohort Program 2.0</label>
+        </div><br />
+        UI for daily tasks with completion tracking.<br /><br />
+        <div class="buttons">
+            <button class="buttons" style="background-color:rgb(125, 216, 181);"><img src="./pages/javascript.jfif"
+                    height="20px" /> JavaScript </button>&nbsp;
+            <button class="buttons" style="background-color:rgb(155, 160, 155);"><img src="./pages/bootstrap.jfif"
+                    height="20px" /> BootStrap</button>&nbsp;
+            <button class="buttons" style="background-color:#9999ff;"><img src="./pages/html.png"
+                    height="20px" /> html</button>&nbsp;
+            <button class="buttons" style="background-color:#a3a3ca">+9</button>
+        </div><br />
+        <div class="review">
+
+            <img src="./pages/calendar-icon.6ca85236.svg" height="20px" />feb 2025 - july 2025 &nbsp;&nbsp;&nbsp;
+            <img src="./pages/my-photo.jpeg" height="20px" /> Vidya Sonawane<br />
+        </div>
+        <hr />
+        <div class="comment">
+            <img src="./pages/deafult-clap-logo.47354508.svg" height="20px" />16 &nbsp;
+            <img src="./pages/comment-story.4dd52157.svg" height="20px" />7 &nbsp;
+            <img src="./pages/share-logo.d24cfab1.svg" height="20px" />
+
+        </div>
+        <div class="info"><a href="https://www.roadtocode.org/project?tab=all">see more <img
+                    src="./pages/right-arrow.gif" height="20px" /></a>
+
+        </div>
+    </div>
+    </div>
 </body>
+
 </html>
